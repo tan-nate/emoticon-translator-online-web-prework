@@ -7,7 +7,6 @@ def load_library(file_path)
   new_hash["get_meaning"] = {}
   new_hash["get_emoticon"] = {}
   file.each do |meaning, emoticons_array|
-    #binding.pry
     new_hash["get_meaning"][emoticons_array[1]] = meaning
     new_hash["get_emoticon"][emoticons_array[0]] = emoticons_array[1]
   end
@@ -31,5 +30,3 @@ def get_english_meaning(file_path, japanese_emoticon)
     "Sorry, that emoticon was not found"
   end
 end
-
-#binding.pry
