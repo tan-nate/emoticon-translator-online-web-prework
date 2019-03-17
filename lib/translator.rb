@@ -2,7 +2,11 @@ require "yaml"
 require "pry"
 
 def load_library(file_path)
-  YAML.load_file(file_path)
+  file = YAML.load_file(file_path)
+  new_hash = {}
+  
+  file.each do |meaning, emoticons_hash|
+    
 end
 
 def get_japanese_emoticon
