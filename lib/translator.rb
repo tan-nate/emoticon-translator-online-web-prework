@@ -7,7 +7,7 @@ def load_library(file_path)
   new_hash["get_meaning"] = {}
   new_hash["get_emoticon"] = {}
   file.each do |meaning, emoticons_array|
-    binding.pry
+    #binding.pry
     new_hash["get_meaning"][emoticons_array[1]] = meaning
     new_hash["get_emoticon"][emoticons_array[0]] = [emoticons_array[2]]
   end
